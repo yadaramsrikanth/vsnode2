@@ -7,7 +7,7 @@ const path=require("path")
 const { request } = require("http")
 
 const dbPath=path.join(__dirname,"user.db")
-let db
+let db=null
 const initializeDBAndServer=async ()=>{
        try{
 
