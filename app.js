@@ -15,7 +15,7 @@ const initializeDBAndServer=async ()=>{
             filename:dbPath,
             driver:sqlite3.Database
         })
-        app.listen(3005,()=>{
+        app.listen(3000,()=>{
             console.log("port running")
         })
         
