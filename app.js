@@ -36,8 +36,8 @@ app.get("/",async(request,response)=>{
     
 })
 
-app.get("/hi",(req,res)=>{
-    res.send("Succeffuuuuuuuuuuuuuuuuuuuuulllllllllyyyyyyyyy")
+app.get("/hi",(request,response)=>{
+    response.send("Succeffuuuuuuuuuuuuuuuuuuuuulllllllllyyyyyyyyy")
 })
 
 app.post("/login",async(request,response)=>{
