@@ -36,16 +36,7 @@ app.get("/",async(request,response)=>{
     
 })
 
-app.get("/hi",(request,response)=>{
-    response.send("Succeffuuuuuuuuuuuuuuuuuuuuulllllllllyyyyyyyyy")
-})
 
-app.get("/book",(request,response)=>{
-    response.send("Books")
-})
-app.get("/hero",(request,response)=>{
-    response.send("Heroes")
-})
 
 app.post("/login",async(request,response)=>{
     const {username,password}=request.body
