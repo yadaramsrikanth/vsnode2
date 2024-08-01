@@ -15,7 +15,7 @@ const initializeDBAndServer=async ()=>{
             filename:dbPath,
             driver:sqlite3.Database
         })
-        app.listen(3005,()=>{
+        app.listen(3007,()=>{
             console.log("port running")
         })
         
@@ -34,6 +34,10 @@ app.get("/",async(request,response)=>{
     const responsedata=await db.all(selectQuery)
     response.send(responsedata)
     
+})
+
+app.get("/hi",(req,res)=>{
+    res.send("Succeffuuuuuuuuuuuuuuuuuuuuulllllllllyyyyyyyyy")
 })
 
 app.post("/login",async(request,response)=>{
