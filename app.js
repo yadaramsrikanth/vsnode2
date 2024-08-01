@@ -5,6 +5,8 @@ const sqlite3=require("sqlite3")
 const {open} =require("sqlite")
 const path=require("path")
 const { request } = require("http")
+const cors=require("cors")
+app.use(cors())
 
 const dbPath=path.join(__dirname,"user.db")
 let db=null
