@@ -43,6 +43,9 @@ app.get("/hi",(request,response)=>{
 app.get("/book",(request,response)=>{
     response.send("Books")
 })
+app.get("/hero",(request,response)=>{
+    response.send("Heroes")
+})
 
 app.post("/login",async(request,response)=>{
     const {username,password}=request.body
