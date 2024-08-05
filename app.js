@@ -51,6 +51,7 @@ app.post("/login",async(request,response)=>{
         await db.run(createQuery)
         response.send("user created succeefully")
     }else{
+        response.status(400)
         response.send("user already exists")
     }
 })
