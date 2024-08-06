@@ -6,6 +6,7 @@ const {open} =require("sqlite")
 const path=require("path")
 const { request } = require("http")
 const cors=require("cors")
+const { error } = require("console")
 app.use(cors({origin:"*"}))
 
 const dbPath=path.join(__dirname,"user.db")
@@ -52,7 +53,7 @@ app.post("/login",async(request,response)=>{
         response.send("user created succeefully")
     }else{
         response.status(400)
-        response.json("user already exists")
+        response.json({userNameError:"user already exists"})
     }
 })
 
