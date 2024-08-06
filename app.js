@@ -53,7 +53,7 @@ app.post("/login",async(request,response)=>{
         response.send("user created succeefully")
     }else{
         response.status(400)
-        response.json({userNameError:"user already exists"})
+        response.send({userNameError:"user already exists"})
     }
 })
 
