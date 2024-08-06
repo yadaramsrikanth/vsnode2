@@ -4,9 +4,9 @@ app.use(express.json())
 const sqlite3=require("sqlite3")
 const {open} =require("sqlite")
 const path=require("path")
-const { request } = require("http")
+
 const cors=require("cors")
-const { error } = require("console")
+
 app.use(cors({origin:'*'}))
 
 const dbPath=path.join(__dirname,"user.db")
