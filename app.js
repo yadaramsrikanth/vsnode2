@@ -7,7 +7,7 @@ const path=require("path")
 const { request } = require("http")
 const cors=require("cors")
 const { error } = require("console")
-app.use(cors({origin:'http://localhost:3004'}))
+app.use(cors({origin:'*'}))
 
 const dbPath=path.join(__dirname,"user.db")
 let db=null
