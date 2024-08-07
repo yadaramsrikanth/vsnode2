@@ -50,7 +50,7 @@ app.post("/login",async(request,response)=>{
         const createQuery=`insert into user (username,password) values ('${username}','${password}');`;
 
         await db.run(createQuery)
-        response.send("user created succeefully")
+        response.send({loginResponse:"user created succeefully"})
     }else{
         response.status(400)
         response.send({userNameError:"user already exists"})
