@@ -36,6 +36,7 @@ app.get("/",async(request,response)=>{
     const selectQuery=`select * from user`
     const responsedata=await db.all(selectQuery)
     response.send(responsedata)
+    console.log(responsedata)
     
 })
 
